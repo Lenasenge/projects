@@ -1,41 +1,35 @@
 html,
 body {
-  html,
-  header {
-    background-color: rgb(90, 137, 98);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-  }
-  body {
-    margin-top: 10em;
-    padding: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(201, 238, 211);
-    color: rgb(242, 242, 242);
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(201, 238, 211);
+  color: rgb(242, 242, 242);
+}
 
-  a {
-    color: rgb(163, 209, 175);
-  }
+a {
+  color: rgb(163, 209, 175);
+}
+header {
+  background-color: rgb(90, 137, 98);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 
-  header h1 {
-    color: rgb(242, 242, 242);
-    padding-left: 1em;
-    padding-top: 1em;
-    margin: 0;
-  }
+  width: 100%;
+}
 
-  header p {
-    color: rgb(242, 242, 242);
-    padding-left: 2em;
-    padding-bottom: 2em;
-    padding-top: 1em;
-    margin: 0;
-  }
+header h1 {
+  color: rgb(242, 242, 242);
+  padding-left: 1em;
+  padding-top: 1em;
+  margin: 0;
+}
+
+header p {
+  color: rgb(242, 242, 242);
+  padding-left: 2em;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  margin: 0;
 }
 
 .grid {
@@ -48,12 +42,6 @@ body {
 @media (min-width: 600px) {
   .grid {
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 992px) {
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
