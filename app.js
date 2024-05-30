@@ -36,7 +36,7 @@ function displayProjectsGrid(projects) {
       <p>${project.acf.group}</p>
       <p>${project.acf.client}</p>
       <h4>${project.acf.description}</h4>
-      <a href="url:${project.acf.url}">${project.acf.url}</a>     
+      <a href=${project.acf.url} target="_blank">${project.acf.url}</a>     
       <p>${project.acf.status}</p>        
     </article>
   `
