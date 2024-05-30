@@ -6,14 +6,15 @@ window.addEventListener("load", initApp); // When the page is loaded, run initAp
 async function initApp() {
   console.log("initApp: app.js is running 🎉");
   const projects = await getProjects();
+  //sorts by time published
   projects.sort(
-    //sorts by time published
     (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
   );
   console.log(projects); // Log to the console that the app is running
   displayProjectsGrid(projects);
 }
 
+//Asynchronous function to fetch project data from wordpress JSON and return parsed data
 async function getProjects() {
   const response = await fetch(
     "https://exam2semester.lenascreativestudio.com/wp-json/wp/v2/project?acf_format=standard"
@@ -22,6 +23,7 @@ async function getProjects() {
   return data;
 }
 
+// Loop through project fields and create HTML elements to display project information
 function displayProjectsGrid(projects) {
   const projectsGrid = document.querySelector("#projects-grid");
 
