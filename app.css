@@ -1,8 +1,17 @@
 html,
 body {
   html,
+  header {
+    background-color: rgb(90, 137, 98);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
   body {
-    margin: 0;
+    margin-top: 10em;
     padding: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(201, 238, 211);
@@ -11,11 +20,6 @@ body {
 
   a {
     color: rgb(163, 209, 175);
-  }
-
-  header {
-    background-color: rgb(90, 137, 98);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
   }
 
   header h1 {
